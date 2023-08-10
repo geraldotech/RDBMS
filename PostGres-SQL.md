@@ -1,8 +1,10 @@
 <h1 align="center">PostGres SQL</h1>
 
+All tested on Windows 10:
+
 How start server? 
 
-go to `services.msc` postgresql-x64-12 click start
+go to `services.msc` choose <ins>postgresql-x64-12</ins> click start
 
 CREATE DATABASE:
 `create database [databasename];`
@@ -39,7 +41,7 @@ CREATE TABLE COMPANY(
    SALARY         REAL
 );
 ```
-APagar tables:
+Apagar tables:
 `drop table players;`
 Lista a tabela: `\dt`
 
