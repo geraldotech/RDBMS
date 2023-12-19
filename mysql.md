@@ -1,5 +1,7 @@
 # mysql
 
+ navigate to the bin folder of your MySQL Server installation directory
+
 - connect to the MySQL console:
 
   - `mysql -u -p`
@@ -16,6 +18,10 @@
     - `SHOW DATABASES;`
   - Delete
     - `DROP DATABASE <name>;`
+  - Select
+    - `USE <name>`
+  - List tables from selected DATABASE
+      - `SHOW TABLES;` or `SHOW FULL TABLES;`
 
 - Now give this user permission over the example_database database:
 
