@@ -14,6 +14,8 @@
     - `CREATE DATABASE example_database;`
   - Show databases
     - `SHOW DATABASES;`
+  - Delete
+    - `DROP DATABASE <name>;`
 
 - Now give this user permission over the example_database database:
 
