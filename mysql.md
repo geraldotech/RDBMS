@@ -22,6 +22,8 @@
     - `USE <name>`
   - List tables from selected DATABASE
       - `SHOW TABLES;` or `SHOW FULL TABLES;`
+  - Delete record
+     - `DELETE FROM <tablename> WHERE item_id='8';`
 
 - Now give this user permission over the example_database database:
 
