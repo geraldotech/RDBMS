@@ -52,7 +52,7 @@ EMAIL: UNIQUE
 
 - `ALTER TABLE cadastros ADD LIMITE VARCHAR(100);`
 
-Se vc ficar um `SELECT * FROM cadatros;` vai notar que os usuarios anteriores nao tem limite, agora vamos adicionar limite por condição;
+Com `SELECT * FROM cadatros;` vai notar que os usuarios anteriores nao tem limite, agora vamos adicionar limite por condição, mostrar columa especifica `SELECT NOME FROM cadastros;`
 
 - `UPDATE cadastros set LIMITE = '1000' WHERE person_id = '3'`
 
@@ -63,6 +63,8 @@ e atualizando email do usuário:
 Adicionando CLIENTE_DESTE:
 - `ALTER TABLE cadastros ADD CLIENTE_DESTE TIMESTAMP NOT NULL;`
 
-- 
+Agora nosso INSERT padrão: 
+
+- `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE) VALUES ("ISABELLA COSTA", "isabella.filho@geraldo.com", "1234567890-1", "0.00")`
 
 - Adicionar table and check data [https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04)
