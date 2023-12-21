@@ -76,5 +76,5 @@ Agora nosso INSERT padrão:
   - `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE) VALUES ("ISABELLA COSTA", "isabella.filho@geraldo.com", "1234567890-1", "0.00")`
 
 
-
+- Backup and Restore [https://docs.bitnami.com/aws/infrastructure/mariadb/administration/backup-restore-mysql-mariadb/](https://docs.bitnami.com/aws/infrastructure/mariadb/administration/backup-restore-mysql-mariadb/)
 - Adicionar table and check data [https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04)
