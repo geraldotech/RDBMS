@@ -57,8 +57,12 @@ EMAIL: UNIQUE
 - Com `SELECT * FROM cadatros;` vai notar que os usuarios anteriores nao tem limite, agora vamos adicionar limite por condição, mostrar columa especifica `SELECT NOME FROM cadastros;`
   - `UPDATE cadastros set LIMITE = '1000' WHERE person_id = '3'`
 
-- UPDATE email do usuário:
+- UPDATE set email do usuário:
   - `UPDATE cadastros set EMAIL = 'felipe@live.com' WHERE person_id = '3';`
+
+- UPDATE set all password
+  - `UPDATE cadastros set PASSWORD = '123';`
+
 
 - Adicionando CLIENTE_DESTE:
   - `ALTER TABLE cadastros ADD CLIENTE_DESTE TIMESTAMP NOT NULL;`
