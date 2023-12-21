@@ -65,12 +65,12 @@ EMAIL: UNIQUE
 
 - WHERE LIMITE IS 0?
   - `SELECT NOME FROM cadastros WHERE LIMITE = '0.00';`
-  - 
+
 - WHERE LIMITE IS > 0?
   - `SELECT * FROM cadastros WHERE LIMITE > '0.00';`
   - 
 - SELECT NOME,EMAIL ONLY 
--  `SELECT NOME,EMAIL FROM cadastros WHERE person_id = '4';`
+  -  `SELECT NOME,EMAIL FROM cadastros WHERE person_id = '4';`
 
 Agora nosso INSERT padrão: 
   - `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE) VALUES ("ISABELLA COSTA", "isabella.filho@geraldo.com", "1234567890-1", "0.00")`
