@@ -48,30 +48,30 @@ EMAIL: UNIQUE
 
 - `INSERT INTO Users.cadastros (NOME, EMAIL, CPF) VALUES ("GERALDO COSTA FILHO", "geraldo.filho@geraldo.com", "1234567890-1");`
 
-- Adicionando nova columa "LIMITE" a tabela existente:
+- ALTER - Adicionando nova columa "LIMITE" a tabela existente:
+  - `ALTER TABLE cadastros ADD LIMITE VARCHAR(100);`
 
-- `ALTER TABLE cadastros ADD LIMITE VARCHAR(100);`
+- Com `SELECT * FROM cadatros;` vai notar que os usuarios anteriores nao tem limite, agora vamos adicionar limite por condição, mostrar columa especifica `SELECT NOME FROM cadastros;`
+  - `UPDATE cadastros set LIMITE = '1000' WHERE person_id = '3'`
 
-Com `SELECT * FROM cadatros;` vai notar que os usuarios anteriores nao tem limite, agora vamos adicionar limite por condição, mostrar columa especifica `SELECT NOME FROM cadastros;`
+- UPDATE email do usuário:
+  - `UPDATE cadastros set EMAIL = 'felipe@live.com' WHERE person_id = '3';`
 
-- `UPDATE cadastros set LIMITE = '1000' WHERE person_id = '3'`
-
-e atualizando email do usuário:
-
-- `UPDATE cadastros set EMAIL = 'felipe@live.com' WHERE person_id = '3';`
-
-Adicionando CLIENTE_DESTE:
-- `ALTER TABLE cadastros ADD CLIENTE_DESTE TIMESTAMP NOT NULL;`
+- Adicionando CLIENTE_DESTE:
+  - `ALTER TABLE cadastros ADD CLIENTE_DESTE TIMESTAMP NOT NULL;`
 
 - WHERE LIMITE IS 0?
   - `SELECT NOME FROM cadastros WHERE LIMITE = '0.00';`
+  - 
 - WHERE LIMITE IS > 0?
   - `SELECT * FROM cadastros WHERE LIMITE > '0.00';`
+  - 
 - SELECT NOME,EMAIL ONLY 
 -  `SELECT NOME,EMAIL FROM cadastros WHERE person_id = '4';`
 
 Agora nosso INSERT padrão: 
+  - `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE) VALUES ("ISABELLA COSTA", "isabella.filho@geraldo.com", "1234567890-1", "0.00")`
 
-- `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE) VALUES ("ISABELLA COSTA", "isabella.filho@geraldo.com", "1234567890-1", "0.00")`
+
 
 - Adicionar table and check data [https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-22-04)
