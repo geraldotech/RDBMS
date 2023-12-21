@@ -24,6 +24,9 @@ navigate to the bin folder of your MySQL Server installation directory
     - `SHOW TABLES;` or `SHOW FULL TABLES;`
   - Delete record
     - `DELETE FROM <tablename> WHERE item_id='8';`
+  - Where contains string 
+    - `SELECT * FROM cadastros WHERE NOME like '%GERALDO%';` 
+  
 
 - Now give this user permission over the example_database database:
 
