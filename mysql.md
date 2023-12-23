@@ -62,6 +62,9 @@ EMAIL: UNIQUE
 
 - UPDATE set all password
   - `UPDATE cadastros set PASSWORD = '123';`
+ 
+- UPDATE MULTIPLE SETS
+  - `UPDATE cadastros set LIMITE = '2000', EMAIL = 'geraldo@geraldo.com' WHERE person_id = '1';`
 
  - UPDATE LIMITE +2
     - `UPDATE cadastros set LIMITE = LIMITE +2 WHERE person_id = '1';`
