@@ -81,6 +81,9 @@ EMAIL: UNIQUE
 - SELECT NOME,EMAIL ONLY 
   -  `SELECT NOME,EMAIL FROM cadastros WHERE person_id = '4';`
 
+- Order Alphabetically
+  - `select * from cadastros order by nome;`
+
 Agora nosso INSERT padrão: 
   - `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE) VALUES ("ISABELLA COSTA", "isabella.filho@geraldo.com", "1234567890-1", "0.00")`
 
