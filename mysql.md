@@ -70,7 +70,7 @@ EMAIL: UNIQUE
     - `UPDATE cadastros set LIMITE = LIMITE +2 WHERE person_id = '1';`
 
 - Adicionando CLIENTE_DESTE:
-  - `ALTER TABLE cadastros ADD CLIENTE_DESTE TIMESTAMP NOT NULL;`
+  - `ALTER TABLE cadastros ADD CLIENTE_DESTE TIMESTAMP NOT NULL;`     
 
 - WHERE LIMITE IS 0?
   - `SELECT NOME FROM cadastros WHERE LIMITE = '0.00';`
@@ -83,6 +83,10 @@ EMAIL: UNIQUE
 
 Agora nosso INSERT padrão: 
   - `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE) VALUES ("ISABELLA COSTA", "isabella.filho@geraldo.com", "1234567890-1", "0.00")`
+
+  - OBS na column CLIENTE_DESTES na verdade o `TIMESTAMP` é referente a última atualizacao daquela coluna do usuáirio:
+      - Alterando o tipo da tabela `ALTER TABLE cadastros MODIFY CLIENTE_DESDE date NOT NULL;`
+      - INSERT ATUALIZADO: `INSERT INTO Users.cadastros (NOME, EMAIL, CPF, LIMITE, CLIENTE_DESDE, PASSWORD) VALUES ("LETICIA", "leticia@test.com", "123456786-12", "0.00", NOW(), '123');` ou sem especificar a database pois a mesma já está selecionada ` INSERT INTO cadastros (NOME, EMAIL, CPF, LIMITE, CLIENTE_DESDE, PASSWORD) VALUES ("LOL FARIAS", "2duda@test.com", "123456786-12", "0.00", NOW(), '123');`
 
 
 - Backup and Restore [https://docs.bitnami.com/aws/infrastructure/mariadb/administration/backup-restore-mysql-mariadb/](https://docs.bitnami.com/aws/infrastructure/mariadb/administration/backup-restore-mysql-mariadb)
