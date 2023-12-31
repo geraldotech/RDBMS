@@ -2,7 +2,8 @@
 
 - [https://www.tutorialrepublic.com/php-tutorial/php-mysql-update-query.php
 ](https://www.tutorialrepublic.com/php-tutorial/php-mysql-update-query.php
-)
+- [https://programmopedia.com/how-to-edit-data-in-php-using-form-mysqli/](https://programmopedia.com/how-to-edit-data-in-php-using-form-mysqli/)
+- [https://websitebeaver.com/php-pdo-vs-mysqli](https://websitebeaver.com/php-pdo-vs-mysqli)
 
 navigate to the bin folder of your MySQL Server installation directory
 
