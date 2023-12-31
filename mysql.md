@@ -1,5 +1,9 @@
 # mysql
 
+- [https://www.tutorialrepublic.com/php-tutorial/php-mysql-update-query.php
+](https://www.tutorialrepublic.com/php-tutorial/php-mysql-update-query.php
+)
+
 navigate to the bin folder of your MySQL Server installation directory
 
 - connect to the MySQL console:
